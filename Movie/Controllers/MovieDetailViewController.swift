@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Firebase
 class MovieDetailViewController: UIViewController {
 
     //MARK:- Proporties
@@ -18,7 +18,6 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var country: UILabel!
     @IBOutlet weak var language: UILabel!
-
     @IBOutlet weak var plot: UILabel!
     // @IBOutlet weak var description: UITextView!
     var data : [MovieDetail] = []
@@ -26,6 +25,7 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          print(id)
+        Analytics.logEvent("MovieDetails", parameters: nil)
         Services().getmovieDetails(Parmters: id!) { success in
             print(success)
             self.year.text = success.imdbRating

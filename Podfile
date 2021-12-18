@@ -10,6 +10,9 @@ target 'Movie' do
   pod 'ProgressHUD'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+  pod 'Firebase/Core'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
   # Pods for Movie
 
 end
