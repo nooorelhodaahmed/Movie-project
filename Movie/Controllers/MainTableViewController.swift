@@ -100,8 +100,8 @@ class MainTableViewController: UITableViewController,UISearchBarDelegate, UISear
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
         secondViewController.id = data[indexPath.row].imdbID
-        secondViewController.name.text = data[indexPath.row].title
-        secondViewController.movieImage.downloaded(from: data[indexPath.row].poster!)
+        secondViewController.name?.text = data[indexPath.row].title
+        secondViewController.movieImage?.downloaded(from: data[indexPath.row].poster!)
         secondViewController.modalPresentationStyle = .fullScreen
         present(secondViewController, animated: true, completion: nil)
     }

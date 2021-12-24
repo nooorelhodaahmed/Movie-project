@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1DE92F27763FD5007E9011 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1DE92D27763FD5007E9011 /* Ratings.swift */; };
+		AF1DE93027763FD5007E9011 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1DE92E27763FD5007E9011 /* MovieDetail.swift */; };
 		AF76A77F276A3CC800191036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A77E276A3CC800191036 /* AppDelegate.swift */; };
 		AF76A781276A3CC800191036 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A780276A3CC800191036 /* SceneDelegate.swift */; };
 		AF76A783276A3CC800191036 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A782276A3CC800191036 /* SplashScreen.swift */; };
@@ -22,8 +24,6 @@
 		AF76A7A6276B7C1F00191036 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A7A4276B7C1F00191036 /* MoviesModel.swift */; };
 		AF76A7A9276B7CB800191036 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A7A8276B7CB800191036 /* Services.swift */; };
 		AF76A7AC276B91F000191036 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A7AB276B91F000191036 /* MovieDetailViewController.swift */; };
-		AF76A7B1276B9D4700191036 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A7AF276B9D4700191036 /* MovieDetail.swift */; };
-		AF76A7B2276B9D4700191036 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A7B0276B9D4700191036 /* Ratings.swift */; };
 		AF76A7B9276C819B00191036 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76A7B8276C819B00191036 /* GoogleService-Info.plist */; };
 		AF76A7BB276CB82B00191036 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76A7BA276CB82B00191036 /* Color.swift */; };
 		AF76A7BD276D014800191036 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF76A7BC276D014800191036 /* Launch Screen.storyboard */; };
@@ -33,6 +33,8 @@
 /* Begin PBXFileReference section */
 		8718EAD0E6710239345DD421 /* Pods_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AB3F263FE7EED94340422E /* Pods-Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie.release.xcconfig"; path = "Target Support Files/Pods-Movie/Pods-Movie.release.xcconfig"; sourceTree = "<group>"; };
+		AF1DE92D27763FD5007E9011 /* Ratings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		AF1DE92E27763FD5007E9011 /* MovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		AF76A77B276A3CC800191036 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF76A77E276A3CC800191036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF76A780276A3CC800191036 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +52,6 @@
 		AF76A7A4276B7C1F00191036 /* MoviesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		AF76A7A8276B7CB800191036 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		AF76A7AB276B91F000191036 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
-		AF76A7AF276B9D4700191036 /* MovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDetail.swift; path = ../../../../../Downloads/codegen_61bb656c29c71/MovieDetail.swift; sourceTree = "<group>"; };
-		AF76A7B0276B9D4700191036 /* Ratings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ratings.swift; path = ../../../../../Downloads/codegen_61bb656c29c71/Ratings.swift; sourceTree = "<group>"; };
 		AF76A7B7276C7F9D00191036 /* Movie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movie.entitlements; sourceTree = "<group>"; };
 		AF76A7B8276C819B00191036 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF76A7BA276CB82B00191036 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 		AF76A7AE276B9D2800191036 /* movieDetail */ = {
 			isa = PBXGroup;
 			children = (
-				AF76A7AF276B9D4700191036 /* MovieDetail.swift */,
-				AF76A7B0276B9D4700191036 /* Ratings.swift */,
+				AF1DE92E27763FD5007E9011 /* MovieDetail.swift */,
+				AF1DE92D27763FD5007E9011 /* Ratings.swift */,
 			);
 			path = movieDetail;
 			sourceTree = "<group>";
@@ -306,8 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF76A7B2276B9D4700191036 /* Ratings.swift in Sources */,
 				AF76A7A9276B7CB800191036 /* Services.swift in Sources */,
+				AF1DE92F27763FD5007E9011 /* Ratings.swift in Sources */,
+				AF1DE93027763FD5007E9011 /* MovieDetail.swift in Sources */,
 				AF76A7A5276B7C1F00191036 /* Search.swift in Sources */,
 				AF76A79C276B64B900191036 /* ImageView.swift in Sources */,
 				AF76A79E276B6D4200191036 /* CardView.swift in Sources */,
@@ -316,7 +317,6 @@
 				AF76A783276A3CC800191036 /* SplashScreen.swift in Sources */,
 				AF76A77F276A3CC800191036 /* AppDelegate.swift in Sources */,
 				AF76A7A6276B7C1F00191036 /* MoviesModel.swift in Sources */,
-				AF76A7B1276B9D4700191036 /* MovieDetail.swift in Sources */,
 				AF76A781276A3CC800191036 /* SceneDelegate.swift in Sources */,
 				AF76A7A1276B741D00191036 /* Extensions.swift in Sources */,
 				AF76A794276B384700191036 /* Connection.swift in Sources */,
